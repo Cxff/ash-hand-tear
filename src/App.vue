@@ -1,11 +1,16 @@
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
+import Count from './components/Count.vue'
 </script>
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <h2>Ash-手撕</h2>
+  <hr />
+  <router-view></router-view>
+  <hr />
+  <Count></Count>
 </template>
 
 <style>
