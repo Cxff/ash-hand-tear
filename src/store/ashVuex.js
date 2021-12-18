@@ -1,4 +1,4 @@
-import { inject, reactive } from "vue";
+import { inject, reactive } from "vue"
 
 const STORE_KEY = '__store__'
 

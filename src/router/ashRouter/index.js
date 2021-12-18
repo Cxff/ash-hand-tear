@@ -1,4 +1,4 @@
-import { ref, inject } from "vue";
+import { ref, inject } from "vue"
 import RouterView from './RouterView.vue'
 import RouterLink from './RouterLink.vue'
 

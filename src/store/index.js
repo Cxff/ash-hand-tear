@@ -23,7 +23,7 @@ const store = createStore({
     asyncAdd({ commit }) {
       setTimeout(() => {
         commit('addCount')
-      }, 1000);
+      }, 1000)
     }
   }
 })
