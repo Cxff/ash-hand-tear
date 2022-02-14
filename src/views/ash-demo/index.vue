@@ -1,27 +1,32 @@
 <template>
-  <div>
-    <h3>当前是ash-demo界面</h3>
-    <hr>
-    <AshChildComp class="ash-child-comp"
-                  :msg="msg"
-                  @sendFather="sendFather"
-                  v-model="state.name"
-                  v-model:age="state.age"
-    >
-      <template #header>
-        <p>这个是 slot内容</p>
-      </template>
-    </AshChildComp>
-    <hr>
-    <p>refAsh: {{ refAsh }}</p>
-    <button @click="changeName">修改名称</button>
-    <p>state: {{ name }}今年{{ age }}岁, 翻一倍是{{ doubleAge }}</p>
-  </div>
+  <FilesUpload></FilesUpload>
+  <!--  <div>-->
+  <!--    <h3>当前是ash-demo界面</h3>-->
+  <!--    <hr>-->
+  <!--    <h4>大文件上传: </h4>-->
+  <!--    -->
+  <!--    <hr>-->
+  <!--    <AshChildComp class="ash-child-comp"-->
+  <!--                  :msg="msg"-->
+  <!--                  @sendFather="sendFather"-->
+  <!--                  v-model="state.name"-->
+  <!--                  v-model:age="state.age"-->
+  <!--    >-->
+  <!--      <template #header>-->
+  <!--        <p>这个是 slot内容</p>-->
+  <!--      </template>-->
+  <!--    </AshChildComp>-->
+  <!--    <hr>-->
+  <!--    <p>refAsh: {{ refAsh }}</p>-->
+  <!--    <button @click="changeName">修改名称</button>-->
+  <!--    <p>state: {{ name }}今年{{ age }}岁, 翻一倍是{{ doubleAge }}</p>-->
+  <!--  </div>-->
 </template>
 
 <script setup>
 import { computed, reactive, ref, toRefs, watch } from 'vue'
 import AshChildComp from "./components/AshChildComp.vue";
+import FilesUpload from "./components/FilesUpload.vue";
 
 const msg = '小灰'
 
